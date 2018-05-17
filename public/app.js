@@ -1,0 +1,4 @@
+(function() {
+	console.log('Page is loaded.');
+})();
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsQ0FBQSxXQUFBO0NBQ0EsUUFBQSxJQUFBO0tBQ0EiLCJmaWxlIjoiYXBwLmpzIiwic291cmNlc0NvbnRlbnQiOlsiKGZ1bmN0aW9uKCkge1xuXHRjb25zb2xlLmxvZygnUGFnZSBpcyBsb2FkZWQuJyk7XG59KSgpOyJdfQ==
