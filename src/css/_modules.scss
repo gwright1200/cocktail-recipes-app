@@ -1,0 +1,83 @@
+
+
+// Navigation
+.navlinks {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+a {
+  .navlinks & {
+    color: black;
+    display: block;
+    float: left;
+    font-size: 17px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    &.active {
+      background-color: #2196F3;
+      color: white;
+    }
+    // check to see if this syntax works
+    @media screen and (max-width: 600px) {
+      float: none;
+      text-align: left;
+      width: 100%;
+    }
+  }
+}
+.navcontainer {
+  margin-left: 200%;
+  transition: all 500ms ease-in-out;
+  &.active {
+    margin-left: 0;
+  }
+  @include responsive(truman) {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+
+
+// Search
+.search-container {
+  border: 1px solid #999;
+  margin: 18px 0;
+  padding: 6px;
+}
+
+button {
+  .search-container & {
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    outline: none;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+// Menu
+.menu > li > a {
+    padding: 0.2rem .4rem;
+    line-height: 1;
+}
+.menu.icon-top > li > a i {
+  margin: 0 auto;
+}
+
+.menu i{
+  font-size: 2rem;
+
+}
+.menu a span{
+  font-size: 0.875rem;
+}
