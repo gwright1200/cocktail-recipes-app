@@ -8,30 +8,44 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="app.js"></script>
 </head>
 
 <body>
-  <nav>
-    <ul class="navlinks">
-      <li><a class="active" href="#home">Home</a></li>
-      <li><a href="#about me">About Me</a></li>
-      <li><a href="credits">Credits</a></li>
-      <li><a href="#contact">Contact</a></li>
+   <div id="t-overlay" class="y-overlay"></div>
+
+    <div class="navwrap">
+      <div class="y-wrap wide">
+        <div class="navlogo">
+          <div class="nimg logo">
+            <img src="https://encrypted-tbn0.gstatic.comimages?qbn:ANd9GcT8ylt6tW-CBkHeRWr74kL1_0HZlxQmWnxSMfngKJQzqMuKMH7pJQ/60x40" alt="Vegan drinks in here signage"  />
+          </div>
+        </div>
+  <nav class="y-wrap">
+    <nav>
+    <ul id="t-navlinks" class="navitems">
+      <li> Home</li>
+      <li> About Me</li>
+      <li> Credits</li>
+      <li> Contact Us</li>
+     </ul>
      
-    </ul>
-    <div class="search-container">
-      <form action="#">
-        <input type="text" placeholder="Search.." name="search">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </form>
-    </div>
+     <div class ="navicon">
+        <div id ="t-mobileicon" class="mobileicon"></div>
+        </div>
+
+
+    <form class="search-container" action="#">
+      <input type="search" placeholder="Search.." name="search" />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
   </nav>
 
-      <div>
-    <a href="index.hmtl">
-      <img src="https://sheriseraecom.files.wordpress.com/2017/04/dsc02011.jpg?w=650" alt="Vegan bar with plants growing from it" />
-    </a>
-    </div>
+  <div class="nimg">
+    <img src="https://sheriseraecom.files.wordpress.com/2017/04/dsc02011.jpg?w=650" alt="Vegan bar with plants growing from it" />
+  </div>
 
 
 
@@ -45,11 +59,11 @@
       
 
     
-  <section class='y-wrap'>
-    <h1> What’s not vegan about booze?</h1>
-    <p>Of course, if an alcohol contains honey or other obvious animal ingredients it’s not vegan, but there are quite a few hidden animal ingredients in the alcohol-making process. Just as bone char can be part of the sugar-refining process, animal products can be part of making beer, wine, or liquors.<p>
+  <section class="y-wrap modify">
+    <h4> What’s not vegan about booze?</h4>
+    <p>Of course, if an alcohol contains honey or other obvious animal ingredients it’s not vegan, but there are quite a few hidden animal ingredients in the alcohol-making process. Just as bone char can be part of the sugar-refining process, animal products can be part of making beer, wine, or liquors.</p>
 
-    <p>Beer and wine are the usual suspects when it comes to hidden animal ingredients, but not all liquors are vegan, so it’s worth looking up, just in case. Here are some of the animal ingredients that go into boozy drinks that you really have no way of knowing about unless you ask the company:
+    <p>Beer and wine are the usual suspects when it comes to hidden animal ingredients, but not all liquors are vegan, so it’s worth looking up, just in case. Here are some of the animal ingredients that go into boozy drinks that you really have no way of knowing about unless you ask the company:</p>
 
   <li>isinglass – gelatin made from fish bladders
 gelatin</li>
@@ -67,7 +81,7 @@ gelatin</li>
   <p> Please Drink Responsibly</p>
   <br>
 
-  <p> Contents copywright @ 2018
+  <p> Contents Copywright @ 2018
   </p>
   <a href= "/contact"> Contact Us </a>
   <br>
@@ -76,8 +90,7 @@ gelatin</li>
   <a href= "/Terms of Use / Privacy Policy"</a>
   </section>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="app.js"></script>
+  
 </body>
 
 </html>
