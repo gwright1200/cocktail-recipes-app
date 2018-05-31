@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/gwright1200/cocktail-recipes-app#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
