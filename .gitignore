@@ -58,4 +58,5 @@ typings/
 .env
 
 # build files
+public/app.js
 public/style.css
