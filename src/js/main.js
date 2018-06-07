@@ -20,7 +20,7 @@
       $(document).on('click', '#t-mobileicon', function() {
 				$('active').toggleClass('t-mobileicon');
 
-      
+
       });
     },
     sizer: function() {
