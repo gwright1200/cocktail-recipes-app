@@ -6,6 +6,7 @@ $burger--thickness: 4px;
   border: 0;
   border-bottom: $burger--thickness solid currentColor;
   cursor: pointer;
+	display: inline-block;
 	outline: 0;
 	padding: 0;
   transition: border-bottom 1s ease-in-out;

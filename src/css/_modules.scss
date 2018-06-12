@@ -1,9 +1,48 @@
 
 
 // Navigation
+.nimg {
+  nav & {
+    display: inline-block;
+    height: 60px;
+    vertical-align: middle;
+    width: calc(50% - 2px);
+    @include responsive(truman) {
+      margin-right: 20px;
+      width: auto;
+    }
+  }
+}
+
+.nnavicon {
+  display: inline-block;
+  margin-right: 0px;
+  text-align: right;
+  vertical-align: middle;
+  width: calc(50% - 2px);
+  @include responsive(truman) {
+    display: none;
+  }
+}
+
+.obey-height {  // only use on img elements
+  height: 100%;
+  width: auto;
+}
+
 .navlinks {
   overflow: hidden;
   background-color: #e9e9e9;
+}
+
+.navitems {
+  display: inline-block;
+}
+
+li {
+  .navitems & {
+    display: inline-block;
+  }
 }
 
 a {
@@ -31,81 +70,26 @@ a {
     }
   }
 }
-.navcontainer {
-  margin-left: 50%;
-  transition: all 500ms ease-in-out;
+.nnavs {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 800ms ease-in-out;
   &.active {
     margin-left: 0;
   }
   @include responsive(truman) {
-    display: block;
-    margin-left: 0;
-  }
-}
-
-.navicon {  
-  position: fixed;
-  right: 5%;  
-  top: 32px;
-  z-index: 50;
-  @include responsive(truman) {
-    display: none;
-  }
-}
-
-navitems {  //c005
-  background: white;
-  height: 2000px;
-  padding: 80px 0 0 26px;
-  position: fixed;
-  right: -300px;
-  top: 0;
-  transition: right 0.6s ease-in-out;
-  width: 180px;
-  z-index: 40;
-  @include responsive(truman) {
-    background: none;
     display: inline-block;
-    height: auto;
-    padding: 0;
-    position: static;
-    text-align: right;
-    width: calc(80% - 2px);
-  }
-  &.active {
-    right: 0;
+    max-height: 1000px;
+    overflow: visible;
   }
 }
-
-li {
-  .navitems & {
-    color: inherit;
-    cursor: pointer;
-    margin: 10px 0;
-    transition: all 0.3s ease-in-out;
-    @include responsive(truman) {
-      display: inline-block;
-      margin: 0 20px;
-      &:last-of-type {
-        margin-right: 0;
-      }
-    }
-    &:hover {
-      color: crimson;
-      padding-left: 5px;
-      @include responsive(truman) {
-        padding-left: 0;
-      }
-    }
-  }
-}
-
 
 
 
 // Search
 .search-container {
   border: 1px solid #999;
+  display: inline-block;
   margin: 18px 0;
   padding: 6px;
 }
@@ -122,11 +106,6 @@ button {
     transform: translateY(-50%);
   }
 }
-
-footer { 
-    display: block;
-}
-
 
 // Menu
 .menu > li > a {
