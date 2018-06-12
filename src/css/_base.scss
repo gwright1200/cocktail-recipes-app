@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------
 body {
   color: $green;
-  font-family: $fontCursive;
+  font-family: $fontSerif;
   font-size: $sizeBase;
 }
 
@@ -54,11 +54,10 @@ html {
 //  Image
 //------------------------------------------------------------------------------
 img {
-  display: block;
   height: auto;
-  width:50px;
+  width: 100%;
 }
- 
+
 
 
 
