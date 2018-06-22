@@ -14,16 +14,15 @@ body {
 //------------------------------------------------------------------------------
 form {
   position: relative;
-  float: right;
 }
 
 input {
   outline: none;
+  vertical-align: bottom;
 }
 
 input[type=search] {
   border: none;
-  font-size: 17px;
   width: 100%;
 }
 
