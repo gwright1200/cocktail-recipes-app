@@ -26,3 +26,8 @@ goal for Tuesday, 12 June 2018
 goal for Thursday, 14 June 2018
 - style nav so that li elements look good and search bar is on the right
 - create other pages with lorem ipsum
+
+goal for Tuesday, 28 June 2018
+– refactor styles so they are organized in their proper folders
+– finish each page with responsive styling
+– finish footer
