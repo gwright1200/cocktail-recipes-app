@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------
 body {
   color: $green;
-  font-family: $fontSerif;
+  font-family: $fontSans;
   font-size: $sizeBase;
 }
 
@@ -17,15 +17,11 @@ form {
 }
 
 footer {
-  clear:both;
+  clear: both;
   width: 100%;
-  text-align:center;
+  text-align: center;
   font-size: 80%;
   color: #999;
-  }  
-
-  
-
 }
 
 input {
