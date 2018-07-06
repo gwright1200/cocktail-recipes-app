@@ -128,7 +128,6 @@ form {
     font-size: pxtoem(16, 16);
   }
   input {
-    margin: 0 0 0.5em 0;
     // border: 1px solid $grey;
     padding: 6px 10px;
     // color: $dark_grey;
@@ -184,7 +183,6 @@ form {
     display: inline-block;
     height: 60px;
     vertical-align: middle;
-    width: calc(50% - 2px);
     @include responsive(truman) {
       margin-right: 20px;
       width: auto;
@@ -201,8 +199,7 @@ form {
   display: inline-block;
   margin-right: 0px;
   text-align: right;
-  vertical-align: middle;
-  width: calc(50% - 2px);
+  vertical-align: bottom;
   @include responsive(truman) {
     display: none;
   }
@@ -214,12 +211,23 @@ form {
 }
 
 .navitems {
+  background: rgba(0, 0, 0, 0.7);
   display: inline-block;
+  height: 100vh;
+  left: -200%;
+  padding: 24px 0 0 5%;
+  position: absolute;
+  top: 0;
+  transition: left 400ms ease-in-out;
+  width: 100vw;
+  &.active {
+    left: calc(-5% - 2px);
+  }
 }
 
 li {
   .navitems & {
-    color: inherit;
+    color: white;
     cursor: pointer;
     margin: 10px 0;
     transition: all 0.3s ease-in-out;
@@ -242,17 +250,11 @@ li {
 
 .nnavs {
   font-size: 17px;
-  max-height: 0;
-  overflow: hidden;
   padding: 17px 0;
+  position: relative;
   transition: all 800ms ease-in-out;
-  &.active {
-    margin-left: 0;
-  }
   @include responsive(truman) {
     display: inline-block;
-    max-height: 1000px;
-    overflow: visible;
     float: right;
   }
 }
@@ -263,7 +265,7 @@ li {
 .search-container {
   border: 1px solid rgba(0,0,0,0.2);
   display: inline-block;
-  margin-left: 30px;
+  vertical-align: bottom;
 }
 
 button {
@@ -333,7 +335,9 @@ body {
 }
 
 .header {
-  // padding: 20px 0;
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
 .footer {
 

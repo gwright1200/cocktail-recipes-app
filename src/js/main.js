@@ -18,9 +18,7 @@
     },
     mobileToggle: function() {
       $(document).on('click', '#t-mobileicon', function() {
-				$('active').toggleClass('t-mobileicon');
-
-
+				$('#t-navlinks').toggleClass('active');
       });
     },
     sizer: function() {
